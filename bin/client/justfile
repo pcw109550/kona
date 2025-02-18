@@ -286,4 +286,3 @@ run-client-cannon-offline block_number l2_claim l2_output_root l2_head l1_head l
     --server \
     --data-dir ./data \
     {{verbosity}}
-  
