@@ -36,18 +36,18 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Clone `asterisc` repository
-        if: "!contains(matrix.target, 'native')"
+        if: "contains(matrix.target, 'asterisc')"
         run: |
           git clone https://github.com/ethereum-optimism/asterisc.git
       - name: Setup Go toolchain
-        if: "!contains(matrix.target, 'native')"
+        if: "contains(matrix.target, 'asterisc')"
         uses: actions/setup-go@v5
         with:
           go-version: "1.21.6"
           cache-dependency-path: |
             asterisc/go.sum
       - name: Build `asterisc`
-        if: "!contains(matrix.target, 'native')"
+        if: "contains(matrix.target, 'asterisc')"
         run: |
           cd asterisc && git checkout v1.2.0 && make build-rvgo
           mv ./rvgo/bin/asterisc /usr/local/bin/
