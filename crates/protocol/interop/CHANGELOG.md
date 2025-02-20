@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0](https://github.com/pcw109550/kona/compare/kona-interop-v0.1.1...kona-interop-v0.2.0) - 2025-02-20
+
+### Added
+
+- Kona Optimism Monorepo (#1055)
+
+### Other
+
+- *(services)* Networking Crate (#1032)
+- Restructure Kona to be more Extensible (#1031)
+
 ## [0.1.1](https://github.com/op-rs/kona/compare/kona-interop-v0.1.0...kona-interop-v0.1.1) - 2025-01-16
 
 ### Other
